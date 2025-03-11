@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sobre ODS 13</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('montañanueva.jpg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 300px 0;
+            font-style: normal new roman;
+            font-size: 10;
+        }
+        nav {
+            background-color: #a8dadc; /* Changed to pastel color */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            height: 60px; /* Increased height */
+            align-items: center; /* Center items vertically */
+            animation: slideIn 1s ease-out; /* Added animation */
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 24px; /* Increased padding */
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition */
+        }
+        nav a:hover {
+            background-color: #f1faee; /* Changed hover background color */
+            color: black;
+            transform: translateY(-5px); /* Move on hover */
+        }
+        .content {
+            padding: 20px;
+            background-color: #f1faee; /* Changed to pastel color */
+        }
+        .content p, .content h2, .comments h2, .contact h2 {
+            margin-bottom: 30px;
+        }
+        .comments, .contact {
+            margin-top: 30px;
+            background-color: #e0e0e0; /* Changed background color */
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in; /* Added animation */
+        }
+        .comments textarea, .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            border: 2px solid #a8dadc; /* Changed border color */
+            transition: transform 0.3s ease, border-color 0.3s ease; /* Added transition */
+        }
+        .comments textarea:hover, .contact input:hover, .contact textarea:hover {
+            transform: translateX(5px); /* Move on hover */
+            border-color: #457b9d; /* Change border color on hover */
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la página web de Manu</h1>
+        <p>En esta página discutiremos sobre el ODS 13: Acciones sobre el Clima. Siéntete invitado a dejar tu opinión abajo.</p>
+    </header>
+    <nav>
+        <a href="section1.html">Sección 1</a>
+        <a href="section2.html">Sección 2</a>
+        <a href="section3.html">Sección 3</a>
+    </nav>
+    <div class="content">
+        <section id="section1">
+            <h2>Sección 1</h2>
+            <p>Contenido de la sección 1.</p>
+        </section>
+        <section id="section2">
+            <h2>Sección 2</h2>
+            <p>Contenido de la sección 2.</p>
+        </section>
+        <section id="section3">
+            <h2>Sección 3</h2>
+            <p>Contenido de la sección 3.</p>
+        </section>
+        <div class="comments">
+            <h2>Comentarios</h2>
+            <textarea rows="4" placeholder="Deja tu comentario aquí..."></textarea>
+        </div>
+        <div class="contact">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellidos" required>
+                <input type="email" placeholder="Correo" required>
+                <textarea rows="4" placeholder="Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
