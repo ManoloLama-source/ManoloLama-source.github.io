@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1faee; /* Same pastel color as content */
+        }
+        header {
+            background-image: url('montañanueva.jpg'); /* Same background image as index */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 0; /* Reduced padding */
+            opacity: 0.7; /* Reduced visibility */
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+        }
+        nav {
+            background-color: #a8dadc; /* Same pastel color */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            height: 60px; /* Increased height */
+            align-items: center; /* Center items vertically */
+            animation: slideIn 1s ease-out; /* Added animation */
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 24px; /* Increased padding */
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition */
+        }
+        nav a:hover {
+            background-color: #f1faee; /* Changed hover background color */
+            color: black;
+            transform: translateY(-5px); /* Move on hover */
+        }
+        .content {
+            padding: 20px; /* Same padding as index */
+            background-color: #ffffff; /* White background for content */
+            margin: 20px; /* Margin to show background color */
+            border-radius: 10px; /* Optional: rounded corners */
+        }
+        .content p, .content h2 {
+            margin-bottom: 30px;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Problemas</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="section1.html">Definicion</a>
+        <a href="section2.html">Problemas</a>
+        <a href="section3.html">Medidas</a>
+    </nav>
+    <div class="content">
+        <h2>Contenido de la sección 2</h2>
+        <p>Este es el contenido de la sección 2.</p>
+    </div>
+</body>
+</html>
