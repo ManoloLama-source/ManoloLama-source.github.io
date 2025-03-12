@@ -47,11 +47,26 @@
             transform: translateY(-5px); /* Move on hover */
         }
         .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             padding: 20px; /* Same padding as index */
             background-color: #ffffff; /* White background for content */
             margin: 20px; /* Margin to show background color */
             border-radius: 10px; /* Optional: rounded corners */
             flex: 1;
+        }
+        .content ul {
+            flex: 1;
+            margin-right: 20px; /* Add margin to separate text from image */
+        }
+        .content img {
+            width: 300px; /* Larger width */
+            height: auto;
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .content img:hover {
+            transform: scale(1.2); /* Enlarge image on hover */
         }
         .content p, .content h2 {
             margin-bottom: 30px;
@@ -84,8 +99,19 @@
         <a href="section3.html">Medidas</a>
     </nav>
     <div class="content">
-        <h2>Que es el ODS 13</h2>
-        <p>El cambio climático es un fenómeno impulsado por actividades humanas que aumentan las emisiones de gases de efecto invernadero, lo que provoca alteraciones en el clima a un ritmo acelerado. Sus efectos incluyen fenómenos meteorológicos extremos, aumento del nivel del mar y amenazas para la vida en la Tierra.</p>
+        <div>
+            <h2>Definicion</h2>
+            <ul>
+                <li>
+                El cambio climático es un fenómeno impulsado por actividades humanas que aumentan las emisiones de gases de efecto invernadero.</li>
+                provoca alteraciones en el clima a un ritmo acelerado,
+                Sus efectos incluyen fenómenos meteorológicos extremos,
+                aumento del nivel del mar.
+                Amenazas para la vida en la Tierra.
+            </li>
+            </ul>
+        </div>
+        <img src="ojo.jpg" alt="Descripción de la imagen">
     </div>
     <footer>
         <p>&copy; Manu 2023</p>
