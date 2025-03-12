@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problemas</title>
     <style>
+        html, body {
+            height: 100%;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f1faee; /* Same pastel color as content */
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-image: url('montañanueva.jpg'); /* Same background image as index */
@@ -18,19 +23,6 @@
             text-align: center;
             padding: 150px 0; /* Reduced padding */
             opacity: 0.7; /* Reduced visibility */
-        }
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
-        }
-        header h1 {
-            position: relative;
-            z-index: 1;
         }
         nav {
             background-color: #a8dadc; /* Same pastel color */
@@ -55,10 +47,25 @@
             transform: translateY(-5px); /* Move on hover */
         }
         .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             padding: 20px; /* Same padding as index */
             background-color: #ffffff; /* White background for content */
             margin: 20px; /* Margin to show background color */
             border-radius: 10px; /* Optional: rounded corners */
+            flex: 1;
+        }
+        .content ul {
+            flex: 1;
+        }
+        .content img {
+            width: 300px; /* Larger width */
+            height: auto;
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .content img:hover {
+            transform: scale(1.2); /* Enlarge image on hover */
         }
         .content p, .content h2 {
             margin-bottom: 30px;
@@ -70,6 +77,13 @@
             to {
                 transform: translateY(0);
             }
+        }
+        footer {
+            background-color: #a8dadc; /* Same pastel color */
+            color: white;
+            padding: 5px 20px; /* Smaller padding */
+            border-radius: 10px; /* Rounded corners */
+            margin: 20px; /* Margin to separate from content */
         }
     </style>
 </head>
@@ -84,8 +98,24 @@
         <a href="section3.html">Medidas</a>
     </nav>
     <div class="content">
-        <h2>Contenido de la sección 2</h2>
-        <p>Este es el contenido de la sección 2.</p>
+        <div>
+            <h2>Problemas</h2>
+            <ul>
+                <li><strong>Transformación económica:</strong> Cambios en los sectores energético, industrial, de transporte, alimentario, agrícola y forestal.</li>
+                <br>
+                <li><strong>Compromiso internacional:</strong> Implementar y fortalecer acuerdos como el Acuerdo de París.</li>
+                <br>
+                <li><strong>Mayor inversión en energías renovables:</strong> Reducir la dependencia de combustibles fósiles.</li>
+                <br>
+                <li><strong>Acción empresarial y gubernamental:</strong> Promover regulaciones y financiamiento para la mitigación y adaptación al cambio climático.</li>
+                <br>
+                <li><strong>Resiliencia y adaptación:</strong> Aplicar planes nacionales de adaptación y fortalecer comunidades vulnerables.</li>
+            </ul>
+        </div>
+        <img src="mundoc.jpg" alt="Descripción de la imagen">
     </div>
+    <footer>
+        <p>&copy; Manu 2023</p>
+    </footer>
 </body>
 </html>

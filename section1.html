@@ -10,6 +10,11 @@
             margin: 0;
             padding: 0;
             background-color: #f1faee; /* Same pastel color as content */
+            display: flex;
+            flex-direction: column;
+        }
+        html, body {
+            height: 100%;
         }
         header {
             background-image: url('montañanueva.jpg'); /* Same background image as index */
@@ -46,6 +51,7 @@
             background-color: #ffffff; /* White background for content */
             margin: 20px; /* Margin to show background color */
             border-radius: 10px; /* Optional: rounded corners */
+            flex: 1;
         }
         .content p, .content h2 {
             margin-bottom: 30px;
@@ -57,6 +63,13 @@
             to {
                 transform: translateY(0);
             }
+        }
+        footer {
+            background-color: #a8dadc; /* Same pastel color */
+            color: white;
+            padding: 5px 20px; /* Smaller padding */
+            border-radius: 10px; /* Rounded corners */
+            margin: 20px; /* Margin to separate from content */
         }
     </style>
 </head>
@@ -72,8 +85,11 @@
     </nav>
     <div class="content">
         <h2>Que es el ODS 13</h2>
-        <p>Los ODS (Objetivos de Desarrollo Sostenible) son 17 metas globales establecidas por la ONU en 2015 como parte de la Agenda 2030. Su objetivo es abordar los principales desafíos mundiales, como la pobreza, el cambio climático, la desigualdad y la sostenibilidad ambiental.</p>
+        <p>El cambio climático es un fenómeno impulsado por actividades humanas que aumentan las emisiones de gases de efecto invernadero, lo que provoca alteraciones en el clima a un ritmo acelerado. Sus efectos incluyen fenómenos meteorológicos extremos, aumento del nivel del mar y amenazas para la vida en la Tierra.</p>
     </div>
+    <footer>
+        <p>&copy; Manu 2023</p>
+    </footer>
 </body>
 </html>
 
